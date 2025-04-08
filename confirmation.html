@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Coca-Cola Retailer Onboarding - Confirmation</title>
+   <link rel="icon" href="images/fevicon.png" type="image/png" />
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="css/responsive.css" />
+   <link rel="stylesheet" href="css/colors.css" />
+   <link rel="stylesheet" href="css/custom.css" />
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="inner_page login">
+   <div class="full_container">
+      <div class="container">
+         <div class="center verticle_center full_height">
+            <div class="login_section">
+               <div class="logo_login">
+                  <div class="center">
+                     <!--<img width="210" src="" alt="Coca-Cola Logo" />-->
+                  </div>
+                  <br>
+               </div>
+               <div class="login_form">
+                  <h4 class="text-center">Confirmation Page</h4>
+                  <p class="text-center">Enter the 6-digit code sent to your Brand Ambassador. This code will expire in
+                     10 minutes.</p>
+                  <form id="confirmationForm" action="success.html" method="get">
+                     <div class="mb-3">
+                        <label for="confirmationCode" class="form-label">Confirmation Code</label>
+                        <input type="text" class="form-control" id="confirmationCode" name="confirmation_code"
+                           placeholder="Enter 6-digit code"  maxlength="6" pattern="\d{6}" />
+                     </div>
+                     <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-danger">Verify Code</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/confirmation.js"></script>
+</body>
+
+</html>

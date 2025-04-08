@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Coca-Cola Retailer Onboarding</title>
+   <link rel="icon" href="images/fevicon.png" type="image/png" />
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="css/responsive.css" />
+   <link rel="stylesheet" href="css/colors.css" />
+   <link rel="stylesheet" href="css/custom.css" />
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <style>
+      .form-select,
+      .form-control {
+         width: 100%;
+      }
+
+      @media (max-width: 768px) {
+
+         .form-select,
+         .form-control {
+            font-size: 0.9rem;
+         }
+
+         button {
+            width: 100%;
+         }
+      }
+   </style>
+</head>
+
+<body class="inner_page login">
+   <div class="full_container">
+      <div class="container">
+         <div class="center verticle_center full_height">
+            <div class="login_section">
+               <div class="logo_login">
+                  <div class="center">
+                  </div>
+                  <br>
+               </div>
+               <div class="login_form">
+                  <form id="retailerRegistrationForm" action="confirmation.html" method="get">
+                     <!-- First Section -->
+                     <div id="section1">
+
+                        <fieldset>
+                           <p style="text-align: center; font-size: larger;">Basic Information</p>
+                           <div class="mb-3">
+                              <label for="storeName" class="form-label">Store Name</label>
+                              <input type="text" class="form-control" id="storeName" name="store_name"
+                                 placeholder="Enter your store name"  />
+                           </div>
+                           <div class="mb-3">
+                              <label for="storeAddress" class="form-label">Store Address</label>
+                              <input type="text" class="form-control" id="storeAddress" name="store_address"
+                                 placeholder="Enter store address"  />
+                           </div>
+                           <div class="mb-3">
+                              <label for="ownerName" class="form-label">Owner's Full Name</label>
+                              <input type="text" class="form-control" id="ownerName" name="owner_name"
+                                 placeholder="Owner's full name"  />
+                           </div>
+
+                           <div class="mb-3">
+                              <label for="phoneNumber" class="form-label">Phone Number</label>
+                              <input type="tel" class="form-control" id="phoneNumber" name="phone_number" placeholder="Phone number"  />
+                           </div>
+
+                          
+                           <div class="mb-3">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password" name="password"
+                                 placeholder="Password"  />
+                           </div>
+                           <div class="mb-3">
+                              <label for="confirmPassword" class="form-label">Confirm Password</label>
+                              <input type="password" class="form-control" id="confirmPassword" name="confirm_password"
+                                 placeholder="Confirm password"  />
+                           </div>
+                          
+                           <div class="d-flex justify-content-end">
+                              <button type="button" class="btn btn-danger "  id="nextSectionBtn">Next</button>
+                           </div>
+                        </fieldset>
+                     </div>
+
+                     <!-- Second Section -->
+                     <div id="section2" style="display: none;">
+                        <fieldset>
+                           <div class="mb-3">
+                              
+                              <label for="brand" class="form-label text-black-50">Brand Ambassador</label>
+
+                              
+                           </div>
+                           <div class="mb-3">
+                              <label for="state" class="form-label">State</label>
+                              <select class="form-select form-control" id="state" name="state" red>
+                                 <option value="" disabled selected>Select a state</option>
+                                 <option value="Lagos">Lagos</option>
+                                 <option value="Abuja">Abuja</option>
+                                 <option value="Kano">Kano</option>
+                                 <option value="Rivers">Rivers</option>
+                                 <option value="Oyo">Oyo</option>
+                              </select>
+                           </div>
+                           <div class="mb-3">
+                              <label for="city" class="form-label">City</label>
+                              <select class="form-select form-control" id="city" name="city" red>
+                                 <option value="" disabled selected>Select a city</option>
+                              </select>
+                           </div>
+                           <div class="mb-3">
+                              <label for="brandAmbassador" class="form-label">Brand Ambassador (BA)</label>
+                              <select class="form-select form-control" id="brandAmbassador" name="brandAmbassador" red>
+                                 <option value="" disabled selected>Select a brand ambassador</option>
+                              </select>
+                           </div>
+                           <div class="d-flex justify-content-between">
+                              <button type="button" class="btn btn-secondary pr-2" id="previousSectionBtn">Back</button>
+                              <button type="submit" class="btn btn-danger">Register</button>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/reg_val.js"></script>
+</body>
+
+</html>
