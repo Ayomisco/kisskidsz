@@ -3283,12 +3283,14 @@ table.projects tr td:first-child {
 }
 
 .logo_login {
-    background: url('images/landing_page/kissback.png');
-    background-size: cover;
+    background: url('images/logo/kisskids.png');
+    background-size:contain;
     background-repeat: no-repeat;
+    /* padding-top: 300px; */
     position: relative;
-    height: 300px;
+    height: 150px;
     padding: 50px 0;
+    background-color: #153190;
 }
 
 /* Image Overlay */
